@@ -1,0 +1,151 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #212529;
+  color: white;
+}
+nav {
+  background-color: #023e8a;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.nav-left {
+  width: 50%;
+  height: 100px;
+  padding: 5px;
+}
+
+.logo {
+  height: 100%;
+}
+.nav-title {
+  color: white;
+  font-size: 2.2rem;
+  position: absolute;
+  left: 120px;
+  top: 20px;
+}
+.nav-right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.nav-button {
+  border-radius: none;
+  border: none;
+  font-weight: bold;
+  padding: 15px;
+  background-color: transparent;
+  color: #f0f0f0;
+}
+.nav-button:hover {
+  background-color: #0077b6;
+  cursor: pointer;
+}
+.text-primary {
+  text-align: center;
+  font-family: Arial;
+}
+.ticket-cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 3fr);
+}
+@media screen and (max-width: 1500px) {
+  .ticket-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .nav-title {
+    top: 50px;
+    left: 5px;
+    font-size: 1.5rem;
+  }
+  .logo {
+    height: 60%;
+  }
+  .ticket-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.box-card {
+  width: 300px;
+  height: 320px;
+  border: 1px lightgray solid;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px;
+  top: 0px;
+  float: left;
+}
+.card-top {
+  width: 100%;
+  height: 50%;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+}
+.image-cap-img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  left: 5px;
+  position: relative;
+}
+.box-card-bottom {
+  width: 300px;
+  height: 140px;
+  bottom: 0px;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  background-color: #0077b6;
+  color: #ffffff;
+  left: 0;
+  padding: 20px;
+}
+.box-card-title {
+  font-size: 1.6em;
+  top: 0px;
+  position: absolute;
+}
+.box-card-text {
+  font-size: 1.2em;
+  position: absolute;
+  top: 40px;
+}
+.button-card {
+  width: 220px;
+  background-color: #023e8a;
+  left: 15px;
+  bottom: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  position: absolute;
+  border: none;
+}
+.button-link :active {
+  background-color: #f0f0f0;
+}
+.button-card-text {
+  color: white;
+  font-family: Georgia;
+  font-size: 1.25em;
+}
+.about-us {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
